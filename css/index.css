@@ -172,6 +172,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .navigation nav {
   justify-content: space-around;
@@ -237,4 +239,16 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.home .content-pick .destination .btn {
+  width: 197px;
+  background: #17A2B8;
+  color: #FFFFFF;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.8em;
+  height: 40px;
+  padding-top: 10px;
 }
