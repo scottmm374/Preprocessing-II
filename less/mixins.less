@@ -1,24 +1,15 @@
 // Mixins in here
 
-.full-width () {
-    margin: 30px 0;
-    display: flex;
-}
 
-.border() {
-    width: 880px;
-    border-top: 2px dashed @navigation-border;
-}
 
-.button(){
-    width: 197px;
-    background: @button-bg;
-    color: @main-bg;
-    border-radius: 12px;
-    text-align: center;
-    font-size: 1.8em;
-    height: 40px;
-    padding-top: 10px;
-
-    
+.button (@width, @background, @color, @text-align, @font-size, @height, @border-radius) {
+ width: @width;
+ background: @background;
+ color: @color;
+ text-align: @text-align;
+ font-size: @font-size;
+ height: @height;
+ border-radius: @border-radius;
+ padding-top: 10px;
+ cursor: pointer;
 }
