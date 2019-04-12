@@ -168,6 +168,12 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
 .nav-container {
   display: flex;
   justify-content: center;
@@ -181,14 +187,30 @@ img {
   width: 100%;
   max-width: 800px;
 }
+@media (max-width: 500px) {
+  .nav-container .navigation {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .nav-container .navigation nav {
+    margin-top: 10px;
+  }
+}
 .nav-container .navigation a {
   text-decoration: none;
   font-size: 15px;
   color: #212529;
-  margin: 0px 15px;
+  margin: 0px 10px;
 }
 .nav-container .navigation a:first-child {
   margin-left: 341px;
+}
+@media (max-width: 500px) {
+  .nav-container .navigation a:first-child {
+    margin-left: 56px;
+    margin: 10px 15px;
+  }
 }
 .footer {
   width: 100%;
