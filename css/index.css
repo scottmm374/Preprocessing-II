@@ -170,18 +170,20 @@ img {
 }
 .navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  width: 100%;
-  border-bottom: 2px dashed #C0C0C0;
+  width: 800px;
+  margin: 20px 0;
+  border-bottom: 2px dashed silver;
 }
-.navigation nav {
-  justify-content: space-around;
-  display: flex;
-}
-.navigation nav a {
+.navigation a {
   text-decoration: none;
+  font-size: 15px;
   color: #212529;
+  margin: 0px 15px;
+}
+.navigation a:first-child {
+  margin-left: 358px;
 }
 .footer {
   width: 100%;

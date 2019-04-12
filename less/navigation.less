@@ -2,18 +2,23 @@
 
 .navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    width: 100%;
-    border-bottom: 2px dashed @navigation-border;
+    width: 800px;
+    margin: 20px 0;   
+    border-bottom: 2px dashed silver;
 
-    nav {
-        justify-content: space-around;
-        display: flex;
 
         a {
             text-decoration: none;
-            color: @font-color;
+            font-size: 15px;
+            color: #212529;
+            margin: 0px 15px;
+
+            
         }
-    }
+        a:first-child {
+            margin-left: 358px;
+        }
+    
 }
